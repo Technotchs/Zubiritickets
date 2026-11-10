@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./CSS/Zubiritickets.css">
+    <title>Zubiri tickets_Galería de audios</title>
+</head>
+<body>
+    <header>
+        <a href="./index.html"><img src="./Recursos/images/logo.png" alt="logo" id="logo"></a>
+        <h1>ENTRADAS ZUBIRI - ¡ENCUENTRA A TUS ARTISTAS FAVORITOS Y COMPRA ENTRADAS!</h1>
+        <div>
+            <a href="https://www.facebook.com/?locale=es_ES"><img src="./Recursos/images/facebook.png" alt="facebook" class="redes"></a>
+            <a href="https://x.com/?lang=es"><img src="./Recursos/images/twitter.png" alt="twitter" class="redes"></a>
+            <a href="https://www.instagram.com/"><img src="./Recursos/images/instagram.png" alt="instagram" class="redes"></a>
+        </div>
+    </header>
+    <br><br>
+    <section id="form-back">
+            <article>
+                <div class="formularios">
+                    <form action="/action_page.php">
+                        <p>Suscribete a nuestro boletín</p>
+                        <label for="correo">Introduce tu 
+                        <label for="email">correo electrónico</label><br>
+                        <input type="email" name="correo@" id="correo" placeholder="xxxx@yyyyy.zzz" class="inputText"><br>
+                        <input type="submit" value="Suscribirse" class="enviar">
+                    </form>
+                </div>
+            </article>
+            <article>
+                <div class="formularios">
+                    <form action="/action_page.php">
+                        <p>Artistas destacados</p>
+                        <select name="artistas" id="artistas" >
+                            <option value="" disabled selected hidden>Elige un artista</option>
+                            <option value="pantera">Pantera</option>
+                            <option value="machine">Machine Head</option>
+                            <option value="metallica">Metallica</option>
+                            <option value="BL">Black Label Society</option>
+                            <option value="Slipknot">Slipknot</option>
+                            <option value="BS">Black Sabbath</option>
+                        </select>
+                    </form>
+                </div>
+            </article>
+            <article>
+                <div class="formularios">
+                    <form action="/action_page.php">
+                        <p>Acceso</p>
+                        <label for="usuario">Usuario</label><br>
+                        <input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario" class="inputText"><br>
+                        <label for="contraseña">Contraseña</label><br>
+                        <input type="text" name="contraseña" id="contraseña" placeholder="Introducir contraseña" class="inputText"><br>
+                        <input type="submit" value="Entrar" class="enviar">
+                    </form>
+                </div>
+            </article>
+        </section>
+        <br><br>
+    <main id="main_audios">
+        <section class="audios">
+            <h1 class="página_título">Galería de audios</h1>
+            <p>Led Zeppelin - Slairway To Heaven</p>
+            <audio src="./Recursos/audios/stairway.mp3" controls></audio>
+            <p>Guns N' Roses - Sweet Child O' Mine</p>
+            <audio src="./Recursos/audios/child.mp3" controls></audio>
+        </section>
+        <aside>
+            <div class="otras_paginas">
+                <h1>Menú</h1>
+                <nav class="menu">
+                    <ul>
+                        <li>
+                            <a href="./index.html"><b>Últimas noticias</b></a></li>
+                        <li>
+                            <a href="./proximos_conciertos.html">                        
+                                <b>Próximos conciertos</b></a></li>
+                        <li>
+                            <a href="./galeria_de_videos.html">
+                                <b>Galería de vídeos</b></a></li>
+                        <li>
+                            <a href="./galeria_de_audios.html">
+                                <b>Galería de audio</b></a></li>
+                        <li>
+                            <a href="./galeria_de_fotos.html">
+                                <b>Galería de fotos</b></a></li>
+                        <li>
+                            <a href="./compra_de_entradas.html">
+                                <b>Comprar entradas</b></a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="otras_paginas">
+                <h1>Próximos conciertos</h1>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="./proximos_conciertos.html"><b>Machine Head - 16 Nov</b></a></li>
+                        <li><a href="./proximos_conciertos.html"><b>Rolling Stones - 5 Dic</b></a></li>
+                        <li><a href="./proximos_conciertos.html"><b>U2 - 25 Ene</b></a></li>
+                        <li><a href="./proximos_conciertos.html"><b>Iron Maiden - 6 Feb</b></a></li>
+                        <li><a href="./proximos_conciertos.html"><b>AC/DC - 21 Abr</b></a></li>
+                        <li><a href="./proximos_conciertos.html"><b>Airbourne - 10 May</b></a></li>
+                        <li><a href="./proximos_conciertos.html"><b>Marilyn Manson - 29 Ago</b></a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="otras_paginas">
+                <h1>Artista de la semana</h1>
+                <img src="./Recursos/images/zakk.jpg" alt="artista" id="zakk">
+                <p id="artista_nombre">Zakk Wylde de Black Label Society</p>
+            </div>
+        </aside> 
+    </main>
+    <footer>
+        <h1 class="foot">TÉRMINOS & CONDICIONES</h1>
+        <h1 class="foot">PREGUNTAS FRECUENTES</h1>
+        <h1 class="foot">MÉTODOS DE PAGO</h1>
+        <h1 class="foot">SOBRE NOSOTROS</h1>
+        <h1 class="foot">CONTACTO</h1>
+        <p><sup>&copy;</sup>2026 - Allan Oliveira Jacom</p>
+    </footer>
+</body>
+</html>
