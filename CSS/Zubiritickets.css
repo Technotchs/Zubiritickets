@@ -362,13 +362,22 @@ footer{
         text-align: center;
         padding: 15px;
     }
+    .redes{
+        visibility: hidden;
+    }
 
     #form-back{
         display: flex;
         flex-direction: column !important;
         flex-wrap: nowrap;
-        padding: 5px;
+        width: 100vw;
+        gap: 0;
+        padding: 0;
+        padding-bottom: 20px !important;
         
+    }
+    .formularios{
+        width: 100vw !important;
     }
     main{
         display: flex;
@@ -378,4 +387,5 @@ footer{
         display: flex;
         flex-direction: column !important;
     }
+
 }
