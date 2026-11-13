@@ -62,7 +62,7 @@
     <main id="main_compra">
         <section class="compra">
             <h1 class="página_título">Compra de entradas</h1>
-            <fieldset>
+            <fieldset id="field_compra">
                 <legend>Pedido</legend>
                 <label for="artista">Artista</label>
                 <form action="/action_page.php">
@@ -84,9 +84,25 @@
                 <br>
                 <form action="/action_page.php">
                     <label for="cantidad">Cantidad de entradas</label>
-                    1<input type="range" id="cantidad" value="1" min="1" max="5" step="1">5
+                    <input type="range" id="cantidad" min="1" max="5" value="1" step="1">
+                    <span id="valorRango">1</span>
+
+                    <script>
+                        const rango = document.getElementById('cantidad');
+                        const salida = document.getElementById('valorRango');
+
+                        // Actualiza el texto cada vez que se mueve la barra
+                        rango.addEventListener('input', (event) => {
+                        salida.textContent = event.target.value;
+                        });
+                    </script>
+                    
                     <br><br>
                     <input type="submit" value="Comprar" class="comprar_submit">
+
+                    
+                    
+
                 </form>
             </fieldset>
         </section>
